@@ -1,0 +1,459 @@
+body {
+    background: #1c232d;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.header-left {
+    background: #aab6c0;
+    height: 650px;
+    position: relative;
+    width: 50%;
+    padding: 0 60px;
+    overflow: hidden;
+}
+
+.header-right {
+    background: #d3dbdf;
+    padding: 60px;
+    height: 350px;
+    width: calc(50% - 100px);
+    position: absolute;
+    right: 0;
+    /* bottom: 203px; */
+}
+
+.greeting {
+    color: #2f4258;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.name {
+    font-size: 60px;
+    color: #d67b27;
+    font-weight: 600;
+}
+
+.profile {
+    color: #6d6e70;
+    font-size: 18px;
+    padding: 20px 0;
+    width: 80%;
+}
+
+.skillset {
+    width: 70%;
+    margin: 80px auto;
+    gap: 50px !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.skillset-description {
+    width: 35%;
+}
+
+.skillset-title{
+    color: #faa93d;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.skillset-text {
+    color: #a7a9ab;
+    font-size: 18px;
+}
+
+.skillset-list {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 50px;
+}
+
+.skillset-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.skill-container {
+    width: 50%;
+}
+
+.skill-img {
+    height: 50px;
+    width: 50px;
+}
+
+.skill-title {
+    font-size: 27px;
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.skill-description {
+    font-size: 18px;
+    color: #a7a9ab;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 400px;
+}
+
+.values-left {
+    width: 50%;
+    background-color: #faa93d;
+}
+
+.values-container {
+    text-align: left;
+    padding: 90px 40px 90px 30%;
+}
+
+.values-title {
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.values-right {
+    width: 50%;
+    background-color: #6d6e70;
+    background-image: url(images/office.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projects{
+    width: 70%;
+    margin: 80px auto;
+    gap: 50px !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-title {
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: #a7a9ab;
+}
+
+.project-subtitle {
+    color: #faa93d;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    background-color: #33404f;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    height: 300px;
+    width: 100%;
+    background-color: #6d6e70;
+}
+
+.project-details {
+    padding: 50px 40px;
+    min-height: 200px;
+}
+
+.project-name {
+    color: #f1f1f2;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.project-description {
+    font-size: 18px;
+    color: #f1f1f2;
+    line-height: 22px;
+}
+
+.project-left, .project-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.project-box {
+    height: 100%;
+    position: relative;
+    padding-top: 0;
+}
+
+.graphic-studies{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.graphic-title{
+    color: #faa93d;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact {
+    width: 70%;
+    margin: 90px auto;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 25px;
+    color: #a7a9ab;
+    padding-bottom: 20px;
+}
+
+.contact-subtitle {
+    color: #faa93d;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    color: #a7a9ab;
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.contact-details span {
+    font-weight: bold;
+}
+
+img#header-img {
+    width: 500px;
+    float: right;
+    margin-right: 40px;
+}
+
+@media (max-width:1280px){
+    #header-img {
+        float: none;
+        position: absolute;
+    }
+}
+
+@media (max-width:1028px){
+    .header-left{
+        /* height: 500px; */
+    }
+    
+    img#header-img {
+        /* width: 370px; */
+        position: absolute;
+        bottom: -2px;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
+
+    .skillset div {
+        width: 100%;
+    }
+
+    .skillset-container {
+        gap: 0;
+    }
+
+    .skillset-container > div:first-child {
+        margin-right: 50px;
+    }
+
+    .values {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .values-left {
+        width: 100%;
+    }
+
+    .values-left div {
+        width: 70%;
+        padding: 0;
+        margin: 90px auto;
+    }
+
+    .projects {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .project-left,.project-right {
+        width: 100%;
+    }
+
+    .project-right {
+        gap: 0;
+    }
+
+    .project-right > :first-child {
+        margin-bottom: 50px;
+    }
+    
+    .project-image {
+        height: 350px;
+    }
+
+    .project-details {
+        min-height: 250px;
+    }
+
+    .project-box {
+        padding-top: 0;
+    }
+    
+    .owl-nav {
+        display: none;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .portfolio-header {
+        flex-direction: column;
+        display: flex;
+        height: 500p;
+    }
+
+    .header-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-right {
+        position:relative;
+        width: 100%;
+        height:300px;
+        min-height: 200px !Important;
+        top: 0px;
+    }
+
+    .header-right p {
+        padding: 0 60px !important;
+    }
+
+    
+}
+
+
+@media (max-width: 600px){
+    .skillset-container {
+        flex-direction:column;
+    }
+
+	.skillset-container>div:first-child {
+	    margin-right: 0px !important;
+		padding-bottom: 50px;
+	}
+
+    .skillset-list > div.skillset-container {
+        /* gap: 50px; */
+    }
+
+    .project-image {
+        height: 300px;
+    }
+
+    .projects > div.project-right:first-child {
+        gap: 50px;
+    }
+
+    .skillset-title, .values-title,.project-subtitle,.graphic-title {
+        font-size: 40px;
+        transition: 0.4s ease;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.owl-item{
+    background:#33404f;
+}
+
+.owl-item img {
+    height: 320px;
+    object-fit:scale-down !important;
+}
+
+.owl-dots {
+    height: 40px;
+    width: 50px;
+}
+
+.owl-nav {
+    display: block !important;
+    text-align:center;
+    margin-top: 20px;
+}
+
+.owl-nav button span {
+    font-size: 30px !important;
+	padding: 0 10px;
+    color: white;
+}
+
+div#project-image2 {
+    background-image: url('..\\ghyllan-denola\\images\\technohub-ss.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+img#video {
+    width: 70px;
+}
+
+img#website {
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+img#management {
+    height: 60px;
+}
+
+div#project-image1 {
+    background-size: contain;
+}
+
+div#project-image1 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
